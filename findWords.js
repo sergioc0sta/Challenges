@@ -29,7 +29,7 @@ function convertString(theString)
         }
 
     }
-    return newString.slice(1,newString.length)
+    return newString
 }
 
 function returnString(theArray)
@@ -40,7 +40,7 @@ function returnString(theArray)
         lastSting += a;
     }
     
-    return lastSting;
+    return (lastSting.substring(0,1)==' ') ? lastSting.substring(1,lastSting.length+1) : lastSting
 }
 
 
